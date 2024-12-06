@@ -6,9 +6,10 @@
 
 /* Hide Elements */
 
-/* Nav Bar */
+/* Navbar */
 
 #home-button,                          /* home */
+#stop-reload-button,                   /* reload */
 #preferences-button,                   /* settings */
 #unified-extensions-button,            /* extensions */
 .titlebar-buttonbox-container,         /* min, max, close */
@@ -20,6 +21,7 @@
 #star-button-box,                      /* bookmark */
 #reader-mode-button,                   /* reader mode */
 #blocked-permissions-container,        /* blocked permissions */
+#userContext-indicator,
 
 /* Sidebar */
 
@@ -34,7 +36,7 @@
 
 /* Style Elements */
 
-/* Nav Bar */
+/* Navbar */
 
 #back-button {
   padding-left: 8px !important;
@@ -51,18 +53,14 @@
 }
 
 /* identity icon and permission */
-#identity-icon-box,
-#identity-permission-box {
+#identity-icon-box:not(:hover),
+#identity-permission-box:not(:hover) {
   background-color: transparent !important;
 }
 
 /* user context ex: Facebook */
 #userContext-label {
   color: var(--zen-primary-color) !important;
-}
-#userContext-indicator {
-  fill: var(--zen-primary-color) !important;
-  margin-left: 6px !important;
 }
 
 /* place protection button at the end */
@@ -81,7 +79,7 @@
 /* reduce space on top of the first tab */
 #zen-sidebar-top-buttons,
 #zen-sidebar-top-buttons-customization-target {
-  margin: -1px 0 !important;
+  margin: -1px !important;
 }
 
 /* reorder download and profile buttons */
