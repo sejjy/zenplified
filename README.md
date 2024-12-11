@@ -2,6 +2,8 @@
 
 # Zenplified 🌐
 
+  <p style="font-size: 0.75em">Mozilla Zen 1.0.1-a.22</p>
+
   <table>
     <tr>
       <td>
