@@ -134,3 +134,35 @@
   border: 1.5px solid var(--zen-colors-border) !important;
   background: var(--zen-colors-tertiary) !important;
 }
+
+/* version: Mozilla Zen 1.7b */
+/* 01-18-2025 */
+
+@-moz-document url-prefix("chrome:") {
+  /* Reduce height */
+  @media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+    #navigator-toolbox {
+      margin: auto !important;
+      height: 75vh !important;
+    }
+  }
+  /* https://zen-browser.app/mods/c8d9e6e6-e702-4e15-8972-3596e57cf398/ */
+  :root:not([customizing]) #back-button[disabled] {
+    display: none !important;
+  }
+  :root:not([customizing]) #forward-button[disabled] {
+    display: none !important;
+  }
+  /* https://zen-browser.app/mods/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/ */
+  .search-one-offs {
+    display: none !important;
+  }
+  .search-one-offs:has(.searchbar-engine-one-off-item[selected]) {
+    display: flex !important;
+  }
+}
+
+#urlbar-background,
+#urlbar:not([focused]) > #urlbar-background {
+  background: transparent !important;
+}
