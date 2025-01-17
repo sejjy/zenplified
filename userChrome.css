@@ -8,26 +8,25 @@
 
 /* Navbar */
 
-#home-button,                          /* home */
-#stop-reload-button,                   /* reload */
-#preferences-button,                   /* settings */
-#unified-extensions-button,            /* extensions */
-.titlebar-buttonbox-container,         /* min, max, close */
+#home-button,                           /* home */
+#reload-button,                         /* reload */
+#preferences-button,                    /* settings */
+.titlebar-buttonbox-container,          /* min, max, close */
 #zen-expand-sidebar-button,
 #zen-sidepanel-button,
 
 /* URL Bar */
 
-#star-button-box,                      /* bookmark */
-#reader-mode-button,                   /* reader mode */
-#blocked-permissions-container,        /* blocked permissions */
+#star-button-box,                       /* bookmark */
+#reader-mode-button,                    /* reader mode */
+#blocked-permissions-container,         /* blocked permissions */
 #userContext-indicator,
 
 /* Sidebar */
 
-#tabs-newtab-button,                   /* (+ New Tab) */
-#zen-current-workspace-indicator-icon, /* workspace icon */
-#tabbrowser-arrowscrollbox-periphery,  /* horizontal divider */
+#tabs-newtab-button,                    /* (+ New Tab) */
+#zen-current-workspace-indicator-icon,  /* workspace icon */
+#tabbrowser-arrowscrollbox-periphery,   /* horizontal divider */
 
 /* Tab: sound icon */
 .tab-icon-overlay {
