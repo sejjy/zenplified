@@ -164,7 +164,7 @@
 
 #urlbar-background {
   border-radius: 0 !important;
-  background-color: #0d0c0c !important;
+  background-color: #161616 !important;
 }
 #urlbar:not([focused]) > #urlbar-background {
   background: transparent !important;
