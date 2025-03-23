@@ -92,6 +92,10 @@
   order: 2 !important;
 }
 
+#zen-sidebar-bottom-buttons {
+  margin-bottom: 4px !important;
+}
+
 /* active tab background color */
 .tab-background:is([selected], [multiselected]) {
   background-color: transparent !important;
