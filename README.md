@@ -1,62 +1,32 @@
 <div align="center">
 
-# Zenplified 🌐
+## 🌀 zenplified
 
-Since **Mozilla Zen 1.0.1-a.22**
-
-  <table>
-    <tr>
-      <td>
-        <img src="assets/preview.png" alt="Preview"/>
-      </td>
-    </tr>
-  </table>
-
-  <details>
-    <summary><strong>&nbsp;🌜 Dark Theme</strong></summary>
-    <br />
-
-|                  Collapsed Sidebar                   |
-| :--------------------------------------------------: |
-| ![collapsed-sidebar-dark](assets/collapsed-dark.png) |
-
-|                  Expanded Sidebar                  |
+| ![collapsed-preview](assets/collapsed-preview.png) |
 | :------------------------------------------------: |
-| ![expanded-sidebar-dark](assets/expanded-dark.png) |
 
-  </details>
+| ![expanded-preview](assets/expanded-preview.png) |
+| :----------------------------------------------: |
 
-  <details>
-    <summary><strong>&nbsp;🌞 Light Theme</strong></summary>
-    <br />
-
-|                   Collapsed Sidebar                    |
-| :----------------------------------------------------: |
-| ![collapsed-sidebar-light](assets/collapsed-light.png) |
-
-|                   Expanded Sidebar                   |
-| :--------------------------------------------------: |
-| ![expanded-sidebar-light](assets/expanded-light.png) |
-
-  </details>
 </div>
-<br />
 
-## Setting up Zenplified
+#
 
-### Step 1. Clone the Repository
+### Setting up zenplified
+
+#### Step 1. Clone the repository
 
 ```bash
 git clone https://github.com/sejjy/zenplified.git
 cd zenplified
 ```
 
-### Step 2. Enable User Stylesheets
+#### Step 2. Enable user stylesheets
 
 1.  Type `about:config` in the address bar and press Enter.
 2.  Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
 
-### Step 3. Copy Configuration Files
+#### Step 3. Copy configuration files
 
 1.  Type `about:support` in the address bar and press Enter.
 2.  Under **Application Basics**, find **Profile Directory** and click **Open Directory**.
@@ -65,9 +35,8 @@ cd zenplified
 
 Restart Zen Browser to apply the changes.
 
-<br />
+#
 
-## Roadmap
+### Roadmap
 
-- [x] Light theme for **homepage**, **new windows**, and **new tabs**
-- [ ] Publish **Zenplified**
+- [ ] Publish **zenplified**
