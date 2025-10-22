@@ -192,20 +192,40 @@
   }
 }
 
-#urlbar-background {
+#urlbar .urlbar-background {
   border-radius: 0 !important;
-  background-color: #161616 !important;
+  background-color: #131313 !important;
 }
 
-#urlbar:not([focused]) > #urlbar-background {
+#urlbar[open] {
+  .urlbar-background {
+    box-shadow: none !important;
+  }
+}
+
+#urlbar:not([focused]) > .urlbar-background {
   background: transparent !important;
+}
+
+/*
+  Bleeding Corners Fix
+  Author: https://github.com/rsiebertdev
+
+  Updated: October 22, 2025
+  Version: Mozilla Zen 1.17b
+*/
+
+html:not([sizemode="fullscreen"]) {
+  .browserStack, browser {
+    clip-path: inset(0 round var(--zen-native-inner-radius));
+  }
 }
 
 /*
   Bring back the context icons
   Author: https://github.com/SivanTechDev
 
-  Updated: June 16 ,2025
+  Updated: June 16, 2025
   Version: Mozilla Zen 1.13b
 */
 
