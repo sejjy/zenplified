@@ -10,6 +10,7 @@
 */
 
 /* ──── HIDE elements ─────────────────────────────────────────────────────── */
+
 /* ────────────────────────────────────────────────────────────── Navbar ──── */
 
 #home-button,
@@ -36,6 +37,7 @@
 }
 
 /* ──── STYLE elements ────────────────────────────────────────────────────── */
+
 /* ────────────────────────────────────────────────────────────── Navbar ──── */
 
 #back-button {
@@ -73,7 +75,8 @@
 	border-radius: 0 !important;
 	background-color: #131313 !important;
 }
-#urlbar:not([focused]) > .urlbar-background {
+
+#urlbar:not([focused])>.urlbar-background {
 	background: transparent !important;
 }
 
@@ -120,8 +123,7 @@
 
 /* Only show close button on hover */
 #tabbrowser-tabs {
-	.tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover)
-	.tab-close-button {
+	.tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
 		display: none !important;
 	}
 }
@@ -137,6 +139,7 @@
 	#tabbrowser-tabpanels {
 		padding: 0 !important;
 	}
+
 	#tabbrowser-tabpanels .browserSidebarContainer:not([zen-split="true"]) {
 		--zen-webview-border-radius: 0 !important;
 		--zen-element-separation: 0 !important;
@@ -144,8 +147,7 @@
 }
 
 /* Active page border in split view */
-#tabbrowser-tabpanels[zen-split-view="true"]
-.browserSidebarContainer.deck-selected {
+#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
 	outline: var(--zen-colors-border) !important;
 }
 
@@ -153,6 +155,7 @@
 #statuspanel {
 	margin: 6px !important;
 }
+
 #statuspanel-label {
 	font-size: 12px !important;
 	padding: 2px 10px !important;
@@ -167,6 +170,7 @@
 */
 
 @-moz-document url-prefix("chrome:") {
+
 	/* Reduce height */
 	@media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
 		#navigator-toolbox {
@@ -174,6 +178,7 @@
 			height: 75vh !important;
 		}
 	}
+
 	/*
 		Mod: Zen Back Forward
 		https://zen-browser.app/mods/c8d9e6e6-e702-4e15-8972-3596e57cf398/
@@ -181,6 +186,7 @@
 	:root:not([customizing]) #back-button[disabled] {
 		display: none !important;
 	}
+
 	:root:not([customizing]) #forward-button[disabled] {
 		display: none !important;
 	}
@@ -192,6 +198,7 @@
 	.search-one-offs {
 		display: none !important;
 	}
+
 	.search-one-offs:has(.searchbar-engine-one-off-item[selected]) {
 		display: flex !important;
 	}
@@ -206,7 +213,9 @@
 */
 
 html:not([sizemode="fullscreen"]) {
-	.browserStack, browser {
+
+	.browserStack,
+	browser {
 		clip-path: inset(0 round var(--zen-native-inner-radius));
 	}
 }
@@ -238,6 +247,7 @@ html:not([sizemode="fullscreen"]) {
 #context-zenSplitLink {
 	--menu-image: url("chrome://browser/skin/zen-icons/split.svg") !important;
 }
+
 #context_zenOpenWorkspace {
 	--menu-image: url("chrome://browser/skin/zen-icons/open.svg") !important;
 }
@@ -257,26 +267,18 @@ html:not([sizemode="fullscreen"]) {
 	list-style-image: url("chrome://browser/skin/zen-icons/media-loop.svg") !important;
 }
 
-:not(:not(menubar) > menu, #ContentSelectDropdown)
-> menupopup
-> menuitem:not(
-.menuitem-iconic,
-[type="checkbox"],
-[type="radio"],
-.in-menulist,
-.in-menulist menuitem,
-.unified-nav-current
-),
-:not(:not(menubar) > menu, #ContentSelectDropdown)
-> menupopup
-> menu:not(
-.menu-iconic,
-[type="checkbox"],
-[type="radio"],
-.in-menulist,
-.in-menulist menu,
-.unified-nav-current
-),
+:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup>menuitem:not(.menuitem-iconic,
+	[type="checkbox"],
+	[type="radio"],
+	.in-menulist,
+	.in-menulist menuitem,
+	.unified-nav-current),
+:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup>menu:not(.menu-iconic,
+	[type="checkbox"],
+	[type="radio"],
+	.in-menulist,
+	.in-menulist menu,
+	.unified-nav-current),
 #toggle_toolbar-menubar,
 #PanelUI-history toolbarbutton,
 #unified-extensions-context-menu menuitem {
@@ -289,17 +291,17 @@ html:not([sizemode="fullscreen"]) {
 }
 
 @media not (-moz-platform: windows) {
-	menu > .menu-iconic-text,
-	menuitem > .menu-iconic-text {
-		padding-inline-start: var(
-			--zen-contextmenu-menuicon-margin-small-inline
-			) !important;
+
+	menu>.menu-iconic-text,
+	menuitem>.menu-iconic-text {
+		padding-inline-start: var(--zen-contextmenu-menuicon-margin-small-inline) !important;
 	}
 }
 
 #context-savepage {
 	--menu-image: url("chrome://browser/skin/zen-icons/save.svg");
 }
+
 #context-selectall,
 .textbox-contextmenu menuitem[cmd*="selectAll"],
 #context_selectAllTabs,
@@ -641,7 +643,7 @@ menuitem[id="placesContext_new:separator"] {
 }
 
 /* Fix header icons for the app menu sub menus (eg. fx account, history...) */
-.panel-header > h1 {
+.panel-header>h1 {
 	text-align: left;
 	margin-left: 8px !important;
 }
@@ -649,6 +651,7 @@ menuitem[id="placesContext_new:separator"] {
 .wordmark::after {
 	content: "Plus" !important;
 }
+
 @media not (-moz-platform: linux) {
 	.unified-extensions-context-menu-pin-to-toolbar {
 		--menu-image: url("chrome://browser/skin/zen-icons/pin.svg");
@@ -663,36 +666,26 @@ menuitem[id="placesContext_new:separator"] {
 	--menu-image: url("chrome://browser/skin/zen-icons/arrow-up.svg");
 }
 
-:not(:not(menubar) > menu, #ContentSelectDropdown)
-> menupopup:not(#toolbar-context-menu)
-> menuitem:not(
-.menuitem-iconic,
-[type="checkbox"],
-[type="radio"],
-.in-menulist,
-.in-menulist menuitem,
-.unified-nav-current
-),
-:not(:not(menubar) > menu, #ContentSelectDropdown)
-> menupopup:not(#toolbar-context-menu)
-> menu:not(
-.menu-iconic,
-[type="checkbox"],
-[type="radio"],
-.in-menulist,
-.in-menulist menu,
-.unified-nav-current
-),
-:not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
-	padding-inline-start: calc(
-		var(--zen-contextmenu-menuitem-padding-inline) +
-		var(--zen-contextmenu-menuicon-margin-inline) / 2
-		) !important; /* Default: approx 30px */
+:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup:not(#toolbar-context-menu)>menuitem:not(.menuitem-iconic,
+	[type="checkbox"],
+	[type="radio"],
+	.in-menulist,
+	.in-menulist menuitem,
+	.unified-nav-current),
+:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup:not(#toolbar-context-menu)>menu:not(.menu-iconic,
+	[type="checkbox"],
+	[type="radio"],
+	.in-menulist,
+	.in-menulist menu,
+	.unified-nav-current),
+:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup>menucaption {
+	padding-inline-start: calc(var(--zen-contextmenu-menuitem-padding-inline) + var(--zen-contextmenu-menuicon-margin-inline) / 2) !important;
+	/* Default: approx 30px */
 }
 
 /* Linux-specific adjustment for menucaption padding based on user feedback */
 @media (-moz-platform: linux) {
-	:not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
+	:not(:not(menubar) > menu, #ContentSelectDropdown)>menupopup>menucaption {
 		/*
 			Original calculation: var(--zen-contextmenu-menuitem-padding-inline) + var(--zen-contextmenu-menuicon-margin-inline) / 2 (approx. 30px).
 			Feedback indicated this created a "big gap" and that a calculation equivalent to using
@@ -700,14 +693,12 @@ menuitem[id="placesContext_new:separator"] {
 			was preferable.
 			This change implements that feedback.
 		*/
-		padding-inline-start: calc(
-			var(--zen-contextmenu-menuitem-padding-inline) +
-			var(--zen-contextmenu-menuicon-margin-inline) / 8
-			) !important; /* Approx. 12px on Linux */
+		padding-inline-start: calc(var(--zen-contextmenu-menuitem-padding-inline) + var(--zen-contextmenu-menuicon-margin-inline) / 8) !important;
+		/* Approx. 12px on Linux */
 	}
 }
 
-menupopup > menuitem[type="checkbox"] .menu-iconic-left {
+menupopup>menuitem[type="checkbox"] .menu-iconic-left {
 	--menu-image: none !important;
 	margin-inline-start: 4px;
 
@@ -718,7 +709,7 @@ menupopup > menuitem[type="checkbox"] .menu-iconic-left {
 }
 
 @media (-moz-platform: windows) {
-	menupopup > menuitem[checked="true"] {
+	menupopup>menuitem[checked="true"] {
 		padding-inline-start: 6px;
 	}
 }
@@ -732,9 +723,7 @@ menupopup > menuitem[type="checkbox"] .menu-iconic-left {
 */
 
 @-moz-document url-prefix("chrome:") {
-	:root[zen-compact-mode="true"]:not([customizing]):not(
-	[inDOMFullscreen="true"]
-	) {
+	:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
 		@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") or (-moz-bool-pref: "zen.view.use-single-toolbar") {
 			#navigator-toolbox {
 				--zen-toolbox-max-width: 66px !important;
@@ -743,13 +732,9 @@ menupopup > menuitem[type="checkbox"] .menu-iconic-left {
 	}
 
 	:root:not([zen-sidebar-expanded="true"]) {
-		--zen-toolbox-max-width: calc(
-			36px + var(--zen-toolbox-padding) * 2
-			) !important;
+		--zen-toolbox-max-width: calc(36px + var(--zen-toolbox-padding) * 2) !important;
 		--tab-collapsed-background-width: 36px !important;
-		--tab-collapsed-width: calc(
-			var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)
-			) !important;
+		--tab-collapsed-width: calc(var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)) !important;
 	}
 
 	#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
@@ -757,6 +742,7 @@ menupopup > menuitem[type="checkbox"] .menu-iconic-left {
 		min-width: var(--zen-toolbox-max-width) !important;
 
 		@media (-moz-bool-pref: "mod.shrinkcompactsidebar.align-sidebar-top-buttons-vertically") {
+
 			& #zen-sidebar-top-buttons,
 			#zen-sidebar-top-buttons-customization-target {
 				padding: 0px !important;
