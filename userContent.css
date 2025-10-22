@@ -16,6 +16,7 @@ url("about:blank"),
 url("about:home"),
 url("about:newtab"),
 url("about:privatebrowsing") {
+
 	/* Dark theme */
 	@media (prefers-color-scheme: dark) {
 		body {
