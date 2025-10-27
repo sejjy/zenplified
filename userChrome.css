@@ -17,14 +17,6 @@
 	display: none !important;
 }
 
-#zen-create-new-button {
-	order: -1 !important;
-}
-
-#downloads-button {
-	order: 1 !important;
-}
-
 #urlbar {
 	position: fixed !important;
 	width: 40vw !important;
@@ -91,6 +83,14 @@
 
 #tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
 	outline: var(--zen-colors-border) !important;
+}
+
+#zen-create-new-button {
+	order: -1 !important;
+}
+
+#downloads-button {
+	order: 1 !important;
 }
 
 #statuspanel {
