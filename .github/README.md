@@ -4,10 +4,10 @@
 
 Zen Browser, simplified.
 
-| ![Collapsed preview](assets/collapsed-preview.png) |
+| ![Collapsed sidebar](assets/collapsed-sidebar.png) |
 | :------------------------------------------------: |
 
-| ![Expanded preview](assets/expanded-preview.png) |
+| ![Expanded sidebar](assets/expanded-sidebar.png) |
 | :----------------------------------------------: |
 
 </div>
