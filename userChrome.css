@@ -18,13 +18,6 @@
 	display: none !important;
 }
 
-#urlbar {
-	position: fixed !important;
-	width: 40vw !important;
-	left: 30vw !important;
-	right: 30vw !important;
-}
-
 #urlbar[open] {
 	.urlbar-background {
 		box-shadow: none !important;
