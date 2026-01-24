@@ -56,7 +56,7 @@
 	--tab-collapsed-width: calc(var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)) !important;
 
 	.zen-current-workspace-indicator {
-		margin-top: 5px !important;
+		margin-top: 4px !important;
 		margin-bottom: 4px !important;
 	}
 
