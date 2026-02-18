@@ -47,6 +47,7 @@
 :root[zen-sidebar-expanded="true"] {
 	.zen-current-workspace-indicator-icon {
 		margin-left: 0.5px !important;
+		margin-bottom: 2px !important;
 	}
 }
 
@@ -56,7 +57,7 @@
 	--tab-collapsed-width: calc(var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)) !important;
 
 	.zen-current-workspace-indicator {
-		margin-top: 4px !important;
+		margin-top: 2px !important;
 		margin-bottom: 4px !important;
 	}
 
