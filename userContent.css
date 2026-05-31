@@ -11,6 +11,8 @@
 	}
 
 	.logo-and-wordmark {
+		margin-block-end: 0 !important;
 		height: 50vh;
+		align-items: center !important;
 	}
 }
