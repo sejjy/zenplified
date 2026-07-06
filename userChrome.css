@@ -20,10 +20,11 @@
 
 	.urlbar-input-container {
 		padding-bottom: 8px !important;
+		padding-left: 5px !important;
 	}
 
 	#identity-box {
-		margin-left: 5px !important;
+		margin-left: 12.5px !important;
 		margin-right: 5px !important;
 	}
 }
@@ -46,8 +47,12 @@
 
 :root[zen-sidebar-expanded="true"] {
 	.zen-current-workspace-indicator-icon {
-		margin-left: 0.5px !important;
+		margin-left: 0.25px !important;
 		margin-bottom: 2px !important;
+	}
+
+	.tab-icon-image {
+		margin-left: 3px !important;
 	}
 }
 
@@ -91,4 +96,10 @@
 	border-radius: calc(infinity * 1px) !important;
 	border: 2px solid var(--zen-colors-border) !important;
 	background: var(--zen-colors-tertiary) !important;
+}
+
+:root[zen-has-empty-tab="true"] {
+	.urlbar-input-container {
+		padding-left: 6.25px !important;
+	}
 }
