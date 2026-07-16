@@ -37,3 +37,9 @@
 	```
 
 2. Restart Zen Browser to apply the changes.
+
+#
+
+### References
+
+- [Live Editing Zen Theme ↗](https://docs.zen-browser.app/guides/live-editing)
