@@ -2,42 +2,38 @@
 
 ## 🌀 zenplified
 
-Zen Browser, simplified.
+**Zen** Browser, sim**plified**
 
-| ![Collapsed sidebar](./assets/collapsed-sidebar.png) |
-| :--------------------------------------------------: |
+| ![Collapsed sidebar](./collapsed-sidebar.png) |
+| :-------------------------------------------: |
 
-| ![Expanded sidebar](./assets/expanded-sidebar.png) |
-| :------------------------------------------------: |
+| ![Expanded sidebar](./expanded-sidebar.png) |
+| :-----------------------------------------: |
 
 </div>
 
 #
 
-### Installation
+### How to install
 
-1. **Enable user stylesheets**
+#### Step 1: Enable user stylesheets
 
-	i. Enter `about:config` in the URL bar.
+1. Enter `about:config` in the URL bar.
 
-	ii. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
+2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
 
-2. **Get the configuration files**
+#### Step 2: Access the profile directory
 
-	i. Enter `about:support` in the URL bar.
+1. Enter `about:support` in the URL bar.
 
-	ii. Find **Profile Directory** and copy the path next to the **Open Directory** button.
+2. Look for **Profile Directory** and click on **Open Directory**.
 
-	iii. Go to that directory:
+#### Step 3: Get the configuration files
 
-	```bash
-	cd path/to/profile/directory
-	```
-
-	iv. Clone the repository into a new directory named `chrome`:
+1. Clone the repository into a new directory named `chrome`:
 
 	```bash
 	git clone https://github.com/sejjy/zenplified.git chrome
 	```
 
-3. **Restart Zen Browser** to apply the changes.
+2. Restart Zen Browser to apply the changes.
