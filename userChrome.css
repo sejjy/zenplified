@@ -19,8 +19,8 @@
 	}
 
 	.urlbar-input-container {
-		padding-bottom: 8px !important;
-		padding-left: 5px !important;
+		padding-bottom: 10px !important;
+		padding-left: 3px !important;
 	}
 
 	#identity-box {
@@ -53,6 +53,12 @@
 
 	.tab-icon-image {
 		margin-left: 3px !important;
+	}
+
+	#urlbar[open] {
+		.urlbar-input-container {
+			padding-left: 2px !important;
+		}
 	}
 }
 
