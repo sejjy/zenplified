@@ -57,7 +57,7 @@
 
 	#urlbar[open] {
 		.urlbar-input-container {
-			padding-left: 2px !important;
+			padding-left: 3px !important;
 		}
 	}
 }
