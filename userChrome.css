@@ -19,13 +19,14 @@
 	}
 
 	.urlbar-input-container {
+		padding-top: 10px !important;
 		padding-bottom: 10px !important;
 		padding-left: 3px !important;
 	}
 
 	#identity-box {
-		margin-left: 12.5px !important;
 		margin-right: 5px !important;
+		margin-left: 12.5px !important;
 	}
 }
 
@@ -35,24 +36,24 @@
 	}
 
 	#identity-box {
-		margin-left: 6px !important;
 		margin-right: 5px !important;
+		margin-left: 6px !important;
 	}
 
 	#zen-copy-url-button {
-		margin-left: 10px !important;
 		margin-right: 2px !important;
+		margin-left: 10px !important;
 	}
 }
 
 :root[zen-sidebar-expanded="true"] {
-	.zen-current-workspace-indicator-icon {
-		margin-left: 0.25px !important;
-		margin-bottom: 2px !important;
-	}
-
 	.tab-icon-image {
 		margin-left: 3px !important;
+	}
+
+	.zen-current-workspace-indicator-icon {
+		margin-bottom: 2px !important;
+		margin-left: 0.25px !important;
 	}
 
 	#urlbar[open] {
@@ -63,21 +64,21 @@
 }
 
 :root:not([zen-sidebar-expanded="true"]) {
-	--zen-toolbox-max-width: calc(36px + var(--zen-toolbox-padding) * 2) !important;
 	--tab-collapsed-background-width: 36px !important;
 	--tab-collapsed-width: calc(var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)) !important;
+	--zen-toolbox-max-width: calc(36px + var(--zen-toolbox-padding) * 2) !important;
 
 	.zen-current-workspace-indicator {
 		margin-top: 2px !important;
 		margin-bottom: 4px !important;
 	}
 
-	#nav-bar-customization-target {
-		margin-left: 32px !important;
-	}
-
 	#PanelUI-button {
 		margin-right: 4px !important;
+	}
+
+	#nav-bar-customization-target {
+		margin-left: 32px !important;
 	}
 }
 
@@ -98,10 +99,10 @@
 }
 
 #statuspanel-label {
-	padding: 2px 8px !important;
-	border-radius: calc(infinity * 1px) !important;
 	border: 2px solid var(--zen-colors-border) !important;
+	border-radius: calc(infinity * 1px) !important;
 	background: var(--zen-colors-tertiary) !important;
+	padding: 2px 8px !important;
 }
 
 :root[zen-has-empty-tab="true"] {
