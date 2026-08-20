@@ -2,7 +2,7 @@
 
 ## 🌀 zenplified
 
-**Zen** Browser, sim**plified**
+<ins><b>Zen</b></ins> Browser, sim<ins><b>plified</b></ins>
 
 | ![Collapsed sidebar](./collapsed-sidebar.png) |
 | :-------------------------------------------: |
@@ -16,21 +16,21 @@
 
 ### How to install
 
-#### Step 1: Enable user stylesheets
+#### Enable user stylesheets
 
 1. Enter `about:config` in the URL bar.
 
 2. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
 
-#### Step 2: Access the profile directory
+#### Access the profile directory
 
 1. Enter `about:support` in the URL bar.
 
-2. Look for **Profile Directory** and click on **Open Directory**.
+2. Look for <ins><b>Profile Directory</b></ins> and click on <ins><b>Open Directory</b></ins>.
 
-#### Step 3: Get the configuration files
+#### Get the configuration files
 
-1. Clone the repository into a new directory named `chrome`:
+1. Clone the repository into a new directory named <ins><b>chrome</b></ins>:
 
 	```bash
 	git clone https://github.com/sejjy/zenplified.git chrome
