@@ -18,15 +18,8 @@
 		border-radius: 0 !important;
 	}
 
-	.urlbar-input-container {
-		padding-top: 10px !important;
-		padding-bottom: 10px !important;
-		padding-left: 3px !important;
-	}
-
 	#identity-box {
-		margin-right: 5px !important;
-		margin-left: 12.5px !important;
+		padding-left: 8px !important;
 	}
 }
 
@@ -35,14 +28,8 @@
 		background: transparent !important;
 	}
 
-	#identity-box {
-		margin-right: 5px !important;
-		margin-left: 6px !important;
-	}
-
 	#zen-copy-url-button {
-		margin-right: 2px !important;
-		margin-left: 10px !important;
+		margin-left: 9.5px !important;
 	}
 }
 
@@ -54,12 +41,6 @@
 	.zen-current-workspace-indicator-icon {
 		margin-bottom: 2px !important;
 		margin-left: 0.25px !important;
-	}
-
-	#urlbar[open] {
-		.urlbar-input-container {
-			padding-left: 3px !important;
-		}
 	}
 }
 
@@ -103,10 +84,4 @@
 	border-radius: calc(infinity * 1px) !important;
 	background: var(--zen-colors-tertiary) !important;
 	padding: 2px 8px !important;
-}
-
-:root[zen-has-empty-tab="true"] {
-	.urlbar-input-container {
-		padding-left: 6.25px !important;
-	}
 }
