@@ -1,3 +1,5 @@
+/* layout.css.devPixelsPerPx = 1.15 */
+
 .tab-close-button,
 .tab-icon-overlay,
 .titlebar-buttonbox-container,
@@ -12,10 +14,22 @@
 	visibility: hidden !important;
 }
 
+:root[zen-has-empty-tab="true"] {
+	#urlbar:not([open]) {
+		.urlbar-input-container {
+			padding-top: 1px !important;
+		}
+
+		#identity-box {
+			margin-right: 2.5px !important;
+			margin-left: 10px !important;
+		}
+	}
+}
+
 #urlbar[open] {
 	.urlbar-background {
 		box-shadow: none !important;
-		border-radius: 0 !important;
 	}
 
 	#identity-box {
@@ -29,7 +43,8 @@
 	}
 
 	#zen-copy-url-button {
-		margin-left: 9.5px !important;
+		margin-right: 1.5px !important;
+		margin-left: 8px !important;
 	}
 }
 
@@ -42,12 +57,27 @@
 		margin-bottom: 2px !important;
 		margin-left: 0.25px !important;
 	}
+
+	#urlbar:not([open]) {
+		#identity-box {
+			margin-left: 11px !important;
+		}
+
+		#zen-copy-url-button {
+			margin-left: 9px !important;
+		}
+	}
 }
 
 :root:not([zen-sidebar-expanded="true"]) {
 	--tab-collapsed-background-width: 36px !important;
-	--tab-collapsed-width: calc(var(--tab-collapsed-background-width) + 2 * var(--tab-inner-inline-margin)) !important;
-	--zen-toolbox-max-width: calc(36px + var(--zen-toolbox-padding) * 2) !important;
+	--tab-collapsed-width: calc(
+		var(--tab-collapsed-background-width) + 2 *
+		var(--tab-inner-inline-margin)
+	) !important;
+	--zen-toolbox-max-width: calc(
+		36px + var(--zen-toolbox-padding) * 2
+	) !important;
 
 	.zen-current-workspace-indicator {
 		margin-top: 2px !important;
@@ -63,7 +93,8 @@
 	}
 }
 
-#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+#tabbrowser-tabpanels[zen-split-view="true"]
+.browserSidebarContainer.deck-selected {
 	outline: var(--zen-colors-border) !important;
 }
 
